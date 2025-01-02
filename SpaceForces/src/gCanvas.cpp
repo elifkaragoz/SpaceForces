@@ -1,8 +1,8 @@
 /*
 * gCanvas.cpp
 *
-*  Created on: May 6, 2020
-*      Author: noyan
+*  Created on: May 6, 2024
+*      Author: elif
 */
 
 #include "gCanvas.h"
@@ -17,11 +17,11 @@ gCanvas::~gCanvas()
 {
 }
 
-void gCanvas::setup() // setup loading ekranıdır fps gibi şeyler çağrılmaz (getFramerate()). Burası loading ekranı o yüzden 0'a eşitliyoruz.
+void gCanvas::setup() // setup loading ekranıdır fps gibi seyler cagrılmaz (getFramerate()). 0'a esitliyoruz.
 {
 	oyunmodu = OYUN_LOAD;
 	parafont.loadFont("FreeSansBold.ttf", 18);
-	logo.loadImage("glistengine_logo.png");//bu resim dosyasini resim degiskenine yukle.
+	logo.loadImage("glistengine_logo.png");
 	mapSetup();
 	oyuncuPlatformSetup();
 	mermiYukle();
@@ -55,7 +55,7 @@ void gCanvas::update() {
 	dmermiHareketi();
 	omermiVsDusmangemi();
 	dmermiVsOyuncuGemi();
-	if (dusmanUretici < root->getFramerate() * 2) // fps değerini verir
+	if (dusmanUretici < root->getFramerate() * 2) // fps degerini verir
 		dusmanUretici += 1;
 	else {
 		dusmanUretici = 0;
