@@ -1,8 +1,8 @@
 /*
  * gApp.cpp
  *
- *  Created on: May 6, 2020
- *      Author: noyan
+ *  Created on: May 6, 2024
+ *      Author: elif
  */
 
 #include "gApp.h"
@@ -38,7 +38,7 @@ void gApp::sesPlay(int id)
 {
 	if (id < 0 || id >= sessayisi)
 		return;
-	if (sescalar[id].isPlaying() == false) // stop modunda olduðundan emin ol
+	if (sescalar[id].isPlaying() == false) // stop modunda olduÃ°undan emin ol
 		sescalar[id].play();
 }
 
@@ -48,7 +48,7 @@ void gApp::sesSeviyesi(int id, int volume)
 		return;
 	if (id < 0 || id >= sessayisi)
 		return;
-	sescalar[id].setVolume(volume * 0.1f); // herhangi bir sayiyi 0.1f ile çarparsan float olur
+	sescalar[id].setVolume(volume * 0.1f); // herhangi bir sayiyi 0.1f ile Ã§arparsan float olur
 }
 
 void gApp::sesStop(int id)
