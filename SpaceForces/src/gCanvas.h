@@ -1,8 +1,8 @@
  /*
  * gCanvas.h
  *
- *  Created on: May 6, 2020
- *      Author: noyan
+ *  Created on: May 6, 2024
+ *      Author: elif
  */
 
 #ifndef GCANVAS_H_
@@ -128,7 +128,7 @@ private:
 	void ogemiUret(int tur);
 	void ogemiDraw();
 	void ogemiHareketi();
-	//dusman gemi --> ayr˝ olmas˝n˝n nedeni size'lar˝n ayn˝ olmayacak olmas˝(farkl˝ gemiler seÁilebilir)
+	//dusman gemi --> ayr√Ω olmas√Ωn√Ωn nedeni size'lar√Ωn ayn√Ω olmayacak olmas√Ω(farkl√Ω gemiler se√ßilebilir)
 	static const int DGEMI_TUR = 0, DGEMI_FRAME = 1, DGEMI_X = 2, DGEMI_Y = 3, DGEMI_W = 4,
 			DGEMI_H = 5, DGEMI_HIZX = 6, DGEMI_FGSAYAC = 7, DGEMI_FGSMAX = 8, DGEMI_SM = 9, DGEMI_YOL = 10,
 			DGEMI_RELOAD = 11, DGEMI_MERMI = 12, DGEMI_CAN = 13;
@@ -139,7 +139,7 @@ private:
 	void dgemiHareketi();
 	int dusmanUretici;
 	// saldiri kontrolleri
-	gRect carpisan1, carpisan2; //dikdˆrtgen olu˛turmam˝z˝ salar (rectangle). -> CenterX metodu var merkez noktas˝n˝ alabiliriz
+	gRect carpisan1, carpisan2; //dikd√∂rtgen olu√æturmam√Ωz√Ω sa√∞lar (rectangle). -> CenterX metodu var merkez noktas√Ωn√Ω alabiliriz
 	void oyuncuGemiSaldiriKonrtolu();
 	void dusmanGemiSaldiriKonrtolu();
 	// mermiler
@@ -216,7 +216,7 @@ private:
 	int exitbutonx, exitbutony, exitbutonw, exitbutonh;
 	void exitbutonSetup();
 	void exitbutonTikla(int farex, int farey, int hangimetod);
-	// ses bar˝
+	// ses bar√Ω
 	gImage sesbari;
 	int sesbarix, sesbariy, sesbariw, sesbarih;
 	float sescubukx, sescubuky, sescubukw, sescubukh;
